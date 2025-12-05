@@ -12,13 +12,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      
       - name: Use Node.js 24.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '24.x'
+          
       - name: Install dependencies
         run: npm install
-      - name: Start JSON Server
-        run: npm run server &
+        
       - name: Run tests
         run: npm test
