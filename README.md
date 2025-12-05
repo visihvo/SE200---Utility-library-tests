@@ -17,3 +17,5 @@ Individuals who remove or modify the license file will also carry the consequenc
 Node & npm
 
 Tests can be ran with 'npm test'. Currently this also creates a coverage report of all the tested files.
+
+[![Coverage Status](https://coveralls.io/repos/github/visihvo/SE200---Utility-library-tests/badge.svg?branch=main)](https://coveralls.io/github/visihvo/SE200---Utility-library-tests?branch=main)
