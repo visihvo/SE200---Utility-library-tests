@@ -25,6 +25,8 @@ jobs:
         run: npm run test-cov
 
       - name: Coveralls
+        if: always()
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./coverage/lcov.info
