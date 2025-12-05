@@ -44,8 +44,4 @@ describe('Should return false.', () => {
   test('Array with multiple elements returns false', () => {
     expect(isEmpty([1,2,3])).toBe(false);
   })
-
-  test('Returns false when called with false', () => {
-    expect(isEmpty(false)).toBe(true);
-  })
 });

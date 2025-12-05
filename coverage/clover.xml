@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1764964194365" clover="3.2.0">
-  <project timestamp="1764964194365" name="All files">
+<coverage generated="1764964502636" clover="3.2.0">
+  <project timestamp="1764964502636" name="All files">
     <metrics statements="83" coveredstatements="13" conditionals="81" coveredconditionals="13" methods="11" coveredmethods="1" elements="175" coveredelements="27" complexity="0" loc="83" ncloc="83" packages="1" files="10" classes="10"/>
     <file name="add.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\add.js">
       <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
