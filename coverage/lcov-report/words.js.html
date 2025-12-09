@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">85.71% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/7</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">85.71% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/7</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -103,20 +103,15 @@
 <a name='L38'></a><a href='#L38'>38</a>
 <a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,9 +126,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -141,15 +141,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import unicodeWords from './.internal/unicodeWords.js'
 &nbsp;
-const hasUnicodeWord = RegExp.prototype.test.bind(
+const hasUnicodeWord = <span class="cstat-no" title="statement not covered" >RegExp.prototype.test.bind(</span>
   /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/
 )
 &nbsp;
 /** Used to match words composed of alphanumeric characters. */
-const reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g
+const reAsciiWord = <span class="cstat-no" title="statement not covered" >/[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g</span>
 &nbsp;
-function asciiWords(string) {
-  return string.match(reAsciiWord)
+function <span class="fstat-no" title="function not covered" >asciiWords(</span>string) {
+<span class="cstat-no" title="statement not covered" >  return string.match(reAsciiWord)</span>
 }
 &nbsp;
 /**
@@ -168,10 +168,10 @@ function asciiWords(string) {
  * words('fred, barney, &amp; pebbles', /[^, ]+/g)
  * // =&gt; ['fred', 'barney', '&amp;', 'pebbles']
  */
-function words(string, pattern) {
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (pattern === undefined) {
-    const result = hasUnicodeWord(string) ? <span class="branch-0 cbranch-no" title="branch not covered" >unicodeWords(string) </span>: asciiWords(string)
-    return result || <span class="branch-1 cbranch-no" title="branch not covered" >[]</span>
+function <span class="fstat-no" title="function not covered" >words(</span>string, pattern) {
+<span class="cstat-no" title="statement not covered" >  if (pattern === undefined) {</span>
+    const result = <span class="cstat-no" title="statement not covered" >hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string)</span>
+<span class="cstat-no" title="statement not covered" >    return result || []</span>
   }
 <span class="cstat-no" title="statement not covered" >  return string.match(pattern) || []</span>
 }
@@ -184,7 +184,7 @@ export default words
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-12-05T20:32:18.731Z
+                at 2025-12-09T15:48:04.391Z
             </div>
         <script src="prettify.js"></script>
         <script>
