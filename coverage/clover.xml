@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1765542898455" clover="3.2.0">
-  <project timestamp="1765542898456" name="All files">
-    <metrics statements="83" coveredstatements="13" conditionals="81" coveredconditionals="16" methods="11" coveredmethods="1" elements="175" coveredelements="30" complexity="0" loc="83" ncloc="83" packages="1" files="10" classes="10"/>
+<coverage generated="1765544813876" clover="3.2.0">
+  <project timestamp="1765544813876" name="All files">
+    <metrics statements="83" coveredstatements="6" conditionals="81" coveredconditionals="2" methods="11" coveredmethods="1" elements="175" coveredelements="9" complexity="0" loc="83" ncloc="83" packages="1" files="10" classes="10"/>
     <file name="add.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\add.js">
       <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <line num="16" count="0" type="stmt"/>
@@ -40,30 +40,30 @@
       <line num="36" count="0" type="stmt"/>
     </file>
     <file name="isEmpty.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\isEmpty.js">
-      <metrics statements="14" coveredstatements="13" conditionals="19" coveredconditionals="16" methods="1" coveredmethods="1"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="46" count="22" type="cond" truecount="2" falsecount="0"/>
-      <line num="47" count="2" type="stmt"/>
-      <line num="49" count="20" type="cond" truecount="8" falsecount="1"/>
-      <line num="52" count="5" type="stmt"/>
-      <line num="54" count="15" type="stmt"/>
-      <line num="55" count="15" type="cond" truecount="4" falsecount="0"/>
-      <line num="56" count="4" type="stmt"/>
-      <line num="58" count="11" type="cond" truecount="1" falsecount="1"/>
+      <metrics statements="14" coveredstatements="0" conditionals="19" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="49" count="0" type="cond" truecount="0" falsecount="9"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="55" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="59" count="0" type="stmt"/>
-      <line num="61" count="11" type="stmt"/>
-      <line num="62" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="63" count="2" type="stmt"/>
-      <line num="66" count="9" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="66" count="0" type="stmt"/>
     </file>
     <file name="map.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\map.js">
-      <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="27" count="0" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="8" type="stmt"/>
+      <line num="24" count="8" type="stmt"/>
+      <line num="25" count="14" type="stmt"/>
+      <line num="27" count="8" type="stmt"/>
     </file>
     <file name="slice.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\slice.js">
       <metrics statements="16" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="1" coveredmethods="0"/>
