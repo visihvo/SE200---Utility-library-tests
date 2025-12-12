@@ -1,12 +1,20 @@
 import toNumber from '../toNumber.js';
 
 describe('toNumber positive cases', () => {
-  test('Converts a decimal number of to a number', () => {
+  test('Converts a string format decimal number of to a number', () => {
     expect(toNumber("3.2")).toBe(3.2);
   });
 
   test('Converts a string format of an Integer to a number', () => {
     expect(toNumber("3")).toBe(3);
+  });
+
+  test('Converts a bigger string format decimal number of to a number', () => {
+    expect(toNumber("3125.2")).toBe(3125.2);
+  });
+
+  test('Converts a bigger string format of an Integer to a number', () => {
+    expect(toNumber("3612")).toBe(3612);
   });
 
   test('Converts binary strings to numbers', () => {
