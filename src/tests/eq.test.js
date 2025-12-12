@@ -12,13 +12,13 @@ test('Compares two numbers right', () => {
 test('Compares two numbers incorrect', () => {
   expect(eq(5, 10)).toBe(false);
 });
-test('Compares two objects same reference', () => {
-  const obj = { 'a': 1 };
+test('Compares a product with itself', () => {
+  const obj = { 'name': 'El gato', 'vol':15.7 };
   expect(eq(obj, obj)).toBe(true);
 });
-test('Compares two objects different reference', () => {
-  const obj1 = { 'a': 1 };
-  const obj2 = { 'a': 1 };
+test('Compares if two different products are the same', () => {
+  const obj1 = { 'name': 'El gato', 'vol':15.7 }; // different years :)
+  const obj2 = { 'name': 'El gato', 'vol':15.7 };
   expect(eq(obj1, obj2)).toBe(false);
 });
 test('Compares NaN values', () => {
@@ -26,6 +26,9 @@ test('Compares NaN values', () => {
 });
 test('Compares different types', () => {
   expect(eq('5', 5)).toBe(false);
+});
+test('Compares different types', () => {
+  expect(eq('55', 55)).toBe(false);
 }); 
 test('Compares null values', () => {
   expect(eq(null, null)).toBe(true);
