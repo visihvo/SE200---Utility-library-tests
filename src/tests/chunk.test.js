@@ -6,7 +6,7 @@ test('Turns an array containing 4 integers into an array containing\
 });
 test('Turns an array containing 4 elements into an array containing\
  4 arrays both of which hold 1 elements', () => {
-  expect(chunk(['a','b','c','d'], 4)).toEqual([['a'],['b'],['c'],['d']]);
+  expect(chunk(['a','b','c','d'], 1)).toEqual([['a'],['b'],['c'],['d']]);
 });
 test('Turns an array containing 4 strings into an array containing\
  2 arrays both of which hold 2 strings', () => {
@@ -28,7 +28,7 @@ test('return empty array when given an empty array', () => {
   expect(chunk([], 2)).toEqual([]);
 });
 test('return empty array when given null', () => {
-  expect(chunk([], 2)).toEqual([]);
+  expect(chunk(null, 2)).toEqual([]);
 });
 test('Return same array when array length is set as the length of the array', () => {
   expect(chunk(['a','b','c','d','e'], 5)).toEqual([['a','b','c','d','e']]);
@@ -36,5 +36,8 @@ test('Return same array when array length is set as the length of the array', ()
 test('Array length is one', () => {
   expect(chunk(['a'], 2)).toEqual([['a']]);
 });
-
-
+test('Splits products list of 7 products in to chunks of three elems. 2 even lists and \
+  1 odd list leaving 1 element alone in the last one', () => {
+  const products = ["Bear meat", "Sandels", "Ale Coq", "Organic carrots", "El Gato", "Black Tower", "Rib eye steak"];
+  expect(chunk(products, 3)).toEqual([["Bear meat", "Sandels", "Ale Coq"], ["Organic carrots", "El Gato", "Black Tower"], ["Rib eye steak"]]);
+});
