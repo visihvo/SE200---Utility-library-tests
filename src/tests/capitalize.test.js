@@ -21,3 +21,9 @@ test("Doesn't break with non-string input",() => {
 test("Doesn't break when the string includes spaces",() => {
   expect(capitalize("en haJoa vÄlilYönneistä")).toBe("En hajoa välilyönneistä");
 } );
+test("Doesn't break with null string",() => {
+  expect(capitalize(null)).toBe("");
+});
+test("Doesn't break when first character isn't a letter",() => {
+  expect(capitalize("1äiti")).toBe("1äiti");
+});
