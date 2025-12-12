@@ -17,7 +17,9 @@ describe('Should return wanted number.', () => {
   test('Adds negative to negative', () => {
     expect(add(-2, -5)).toBe(-7);
   });
-
+  test('Doesnt add to max value', () => {
+    expect(add(Number.MAX_VALUE, 1)).toBe(Number.MAX_VALUE);
+  });
 });
 
 describe('Should return integer', () => {
@@ -25,5 +27,4 @@ describe('Should return integer', () => {
   test('returns integer when adding string', () => {
     expect(Number.isInteger(add("ni"+1))).toBe(true);
   });
-
-  });
+});
