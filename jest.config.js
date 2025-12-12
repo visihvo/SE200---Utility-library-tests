@@ -1,5 +1,4 @@
 export default {
-  collectCoverage: true,
   collectCoverageFrom: [
     "src/add.js",
     "src/chunk.js",
@@ -11,5 +10,7 @@ export default {
     "src/eq.js",
     "src/toNumber.js",
     "src/capitalize.js"
-  ]
+  ],
+  testEnvironment: "node",
+  transform: {}
 };
