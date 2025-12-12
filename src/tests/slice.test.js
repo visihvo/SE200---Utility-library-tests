@@ -39,3 +39,15 @@ test('Does not change original array', () => {
   expect(arr).toEqual([1,2,3,4]);
 });
 
+test('Asserted end parameter is negative and the indexing goes beyond length of the arr.\
+   Should return empty', () => {
+    expect(slice([1, 2, 3], 1, -5)).toEqual([]);
+});
+
+test('Slices array keeping the 1st element and dropping the last with negative end index', () => {
+    expect(slice([1, 2, 3], 0, -1)).toEqual([1,2]);
+});
+
+test('Slices array with negative start and negative end', () => {
+    expect(slice([1,2,3,4,5], -3, -1)).toEqual([3,4]);
+});
