@@ -9,3 +9,15 @@ test('Changes all but first character to lowercase', () => {
 test('Changes all but first character to lowercase, and first character to upper case', () => {
   expect(capitalize("bEER")).toBe("Beer");
 });
+test("Doesn't break with UTF-8 characters",() => {
+  expect(capitalize("äiti")).toBe("Äiti");
+});
+test("Doesn't break with empty string",() => {
+  expect(capitalize("")).toBe("");
+});
+test("Doesn't break with non-string input",() => {
+  expect(capitalize(1234)).toBe("1234");
+});
+test("Doesn't break when the string includes spaces",() => {
+  expect(capitalize("en haJoa vÄlilYönneistä")).toBe("En hajoa välilyönneistä");
+} );

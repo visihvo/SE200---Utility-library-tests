@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1765555558879" clover="3.2.0">
-  <project timestamp="1765555558879" name="All files">
+<coverage generated="1765560627889" clover="3.2.0">
+  <project timestamp="1765560627889" name="All files">
     <metrics statements="83" coveredstatements="82" conditionals="81" coveredconditionals="73" methods="11" coveredmethods="11" elements="175" coveredelements="166" complexity="0" loc="83" ncloc="83" packages="1" files="10" classes="10"/>
-    <file name="add.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\add.js">
+    <file name="add.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\add.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="16" count="6" type="stmt"/>
     </file>
-    <file name="capitalize.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\capitalize.js">
+    <file name="capitalize.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\capitalize.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="17" count="3" type="stmt"/>
+      <line num="17" count="7" type="stmt"/>
     </file>
-    <file name="chunk.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\chunk.js">
+    <file name="chunk.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\chunk.js">
       <metrics statements="10" coveredstatements="10" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
       <line num="23" count="11" type="stmt"/>
       <line num="24" count="11" type="cond" truecount="2" falsecount="0"/>
@@ -23,11 +23,11 @@
       <line num="33" count="21" type="stmt"/>
       <line num="35" count="9" type="stmt"/>
     </file>
-    <file name="eq.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\eq.js">
+    <file name="eq.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\eq.js">
       <metrics statements="1" coveredstatements="1" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="32" count="13" type="cond" truecount="3" falsecount="0"/>
     </file>
-    <file name="filter.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\filter.js">
+    <file name="filter.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\filter.js">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="25" count="10" type="stmt"/>
       <line num="26" count="10" type="stmt"/>
@@ -39,7 +39,7 @@
       <line num="33" count="23" type="stmt"/>
       <line num="36" count="10" type="stmt"/>
     </file>
-    <file name="isEmpty.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\isEmpty.js">
+    <file name="isEmpty.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\isEmpty.js">
       <metrics statements="14" coveredstatements="13" conditionals="19" coveredconditionals="16" methods="1" coveredmethods="1"/>
       <line num="9" count="1" type="stmt"/>
       <line num="46" count="22" type="cond" truecount="2" falsecount="0"/>
@@ -56,7 +56,7 @@
       <line num="63" count="2" type="stmt"/>
       <line num="66" count="9" type="stmt"/>
     </file>
-    <file name="map.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\map.js">
+    <file name="map.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\map.js">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="20" count="8" type="stmt"/>
       <line num="21" count="8" type="cond" truecount="2" falsecount="0"/>
@@ -65,7 +65,7 @@
       <line num="25" count="14" type="stmt"/>
       <line num="27" count="8" type="stmt"/>
     </file>
-    <file name="slice.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\slice.js">
+    <file name="slice.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\slice.js">
       <metrics statements="16" coveredstatements="16" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
       <line num="22" count="33" type="cond" truecount="2" falsecount="0"/>
       <line num="23" count="33" type="cond" truecount="2" falsecount="0"/>
@@ -84,7 +84,7 @@
       <line num="41" count="56" type="stmt"/>
       <line num="43" count="32" type="stmt"/>
     </file>
-    <file name="toNumber.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\toNumber.js">
+    <file name="toNumber.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\toNumber.js">
       <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="1" coveredmethods="1"/>
       <line num="5" count="2" type="stmt"/>
       <line num="8" count="2" type="stmt"/>
@@ -105,7 +105,7 @@
       <line num="59" count="12" type="stmt"/>
       <line num="60" count="12" type="cond" truecount="4" falsecount="0"/>
     </file>
-    <file name="words.js" path="C:\kurssit\test\SE200---Utility-library-tests\src\words.js">
+    <file name="words.js" path="E:\aaatuni\roadtotieteenmestari\testing\uus2\SE200---Utility-library-tests\src\words.js">
       <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
       <line num="3" count="1" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
