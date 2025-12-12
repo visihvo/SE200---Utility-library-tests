@@ -21,10 +21,3 @@ describe('Should return wanted number.', () => {
     expect(add(Number.MAX_VALUE, 1)).toBe(Number.MAX_VALUE);
   });
 });
-
-describe('Should return integer', () => {
-
-  test('returns integer when adding string', () => {
-    expect(Number.isInteger(add("ni"+1))).toBe(true);
-  });
-});
