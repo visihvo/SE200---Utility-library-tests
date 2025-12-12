@@ -6,10 +6,36 @@ describe('Positive cases of words', () => {
       expect(words("dog cat cow")).toEqual(["dog", "cat", "cow"]);
   });
 
-  test('ignores punctuation by default', () => {
+  test('Ignores punctuation by default', () => {
     expect(words('fred, barney, & pebbles')).toEqual(['fred', 'barney', 'pebbles']);
   });
-});
 
-// words() also has a possibility to select a patter to filter out the "words"
-// by using the 2nd parameter.
+  test('Return wanted elements with specified pattern', () => {
+    expect(words('fred, barney, & pebbles', /[^, ]+/g)).toEqual(['fred', 'barney', '&', 'pebbles'])
+  });
+
+  test('Handles string from test plan: "bear meat, food, healthy"', () => {
+    expect(words("bear meat, food, healthy"))
+      .toEqual(["bear", "meat", "food", "healthy"]);
+  });
+
+  test('Returns empty array for empty string', () => {
+    expect(words("")).toEqual([]);
+  });
+
+  test('Returns empty array when no ASCII words exist', () => {
+    expect(words("!!! ??? ...")).toEqual([]);
+  });
+
+  test('Works with unique chars like é and ö', () => {
+    expect(words("cäfé mikkö")).toEqual(["cäfé", "mikkö"]);
+  });
+
+  test('Preserves spaces inside phrases while splitting only by punctuation', () => {
+    const input = "bear meat, food, healthy";
+
+    const result = words(input, /[^,]+/g).map(s => s.trim());
+
+    expect(result).toEqual(["bear meat", "food", "healthy"]);
+  });
+});

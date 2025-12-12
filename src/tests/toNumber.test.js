@@ -1,19 +1,19 @@
 import toNumber from '../toNumber.js';
 
 describe('toNumber positive cases', () => {
-  test('Converts a string format decimal number of to a number', () => {
+  test('Converts a string format decimal number of to a number which can be used as a price', () => {
     expect(toNumber("3.2")).toBe(3.2);
   });
 
-  test('Converts a string format of an Integer to a number', () => {
+  test('Converts a string format of an Integer to a number which can be used as a price', () => {
     expect(toNumber("3")).toBe(3);
   });
 
-  test('Converts a bigger string format decimal number of to a number', () => {
+  test('Converts a bigger string format decimal number of to a number which can be used as a price', () => {
     expect(toNumber("3125.2")).toBe(3125.2);
   });
 
-  test('Converts a bigger string format of an Integer to a number', () => {
+  test('Converts a bigger string format of an Integer to a number which can be used as a price', () => {
     expect(toNumber("3612")).toBe(3612);
   });
 
